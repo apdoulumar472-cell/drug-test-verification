@@ -1,2 +1,2 @@
-# drug-test-verification
-Drug Test Certificate Verification System with QR Code Access
+# drug-test-Result 
+Drug Test Certificate Result System
