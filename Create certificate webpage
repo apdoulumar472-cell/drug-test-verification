@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drug Test Certificate Verification</title>
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+            background:#f5f5f5;
+            text-align:center;
+            padding:20px;
+        }
+        img{
+            max-width:90%;
+            height:auto;
+            border:1px solid #ccc;
+        }
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 25px;
+            background:#007bff;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>✓ VERIFIED DRUG TEST CERTIFICATE</h1>
+
+<img src="certificate.jpg" alt="Certificate">
+
+<br>
+
+<a class="btn" href="certificate.jpg" download>
+Download Certificate
+</a>
+
+</body>
+</html>
