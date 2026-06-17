@@ -1,41 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Drug Test Certificate Verification</title>
+    <title>Certificate</title>
+
     <style>
         body{
-            font-family:Arial,sans-serif;
+            margin:0;
+            font-family:Arial, sans-serif;
             background:#f5f5f5;
             text-align:center;
+        }
+
+        /* First screen */
+        #certificateView{
             padding:20px;
         }
-        img{
+
+        #certificateView img{
             max-width:90%;
             height:auto;
             border:1px solid #ccc;
         }
-        .btn{
-            display:inline-block;
-            margin-top:20px;
-            padding:12px 25px;
-            background:#007bff;
+
+        /* Second screen */
+        #printView{
+            display:none;
+            background:#dcdcdc;
+            min-height:100vh;
+        }
+
+        .topbar{
+            background:#00a8c6;
             color:white;
-            text-decoration:none;
-            border-radius:5px;
+            padding:25px;
+            font-size:20px;
+            text-align:left;
+        }
+
+        .paper{
+            width:80%;
+            margin:50px auto;
+            background:white;
+            padding:20px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .paper img{
+            width:100%;
+            height:auto;
+        }
+
+        .footer{
+            background:#aaa;
+            color:white;
+            padding:15px;
+            font-size:24px;
         }
     </style>
 </head>
 <body>
 
-<h1>✓ VERIFIED DRUG TEST CERTIFICATE</h1>
+<!-- First page -->
+<div id="certificateView">
+    <img src="certificate.jpg" alt="Certificate">
+</div>
 
-<img src="certificate.jpg" alt="Certificate">
+<!-- Second page -->
+<div id="printView">
 
-<br>
+    <div class="topbar">
+        Select a printer<br><br>
+        Copies: 01 &nbsp;&nbsp;&nbsp; Paper size: Letter
+    </div>
 
-<a class="btn" href="certificate.jpg" download>
-Download Certificate
-</a>
+    <div class="paper">
+        <img src="certificate.jpg" alt="Certificate">
+    </div>
+
+    <div class="footer">
+        1/1 ✓
+    </div>
+
+</div>
+
+<script>
+    setTimeout(function() {
+        document.getElementById("certificateView").style.display = "none";
+        document.getElementById("printView").style.display = "block";
+    }, 5000); // 5 seconds
+</script>
 
 </body>
 </html>
